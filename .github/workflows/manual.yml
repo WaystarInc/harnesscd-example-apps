@@ -11,6 +11,8 @@ jobs:
   deploy-lambda:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: configure
         uses: aws-actions/configure-aws-credentials@v2
         with:
